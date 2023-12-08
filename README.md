@@ -28,3 +28,25 @@ Problema se rezolva recursiv, folosind metoda ***Divide et Impera***, iar algori
 Pasul 1: - mutarea a n-1 discuri de pe tija a pe tija b , utilizând ca tijă intermediară tija c ;
 Pasul 2: - mutarea discului rămas pe tija c ;
 Pasul 3: - mutarea a n-1 discuri de pe tija b pe tija c , utilizând ca tijă intermediară tija a .
+
+![image](https://img001.prntscr.com/file/img001/SgL5XRghQ_WXA0MlWXto_g.png)
+Aplicam algoritmul de mai sus pentru 3 discuri si trebuie sa ne iasa 2^3 - 1 = 8 mutari:
+
+H(3, a, b, c) = H(2, a, c, b,), ac, H(2, b, a, c) = H(1, a, b, c), ab, H(1, c, a, b), ac, H(1, b, c, a), bc, H(1, a, b, c) = ac, ab, cb, ac, ba, bc, ac (8 mutari)
+
+#####Algoritmul scris in limbaj pascal:
+    functie Hanoi(int n, char a, char b, char c) void
+    begin
+        daca n <= 0 atunci
+            afiseaza NIMIC!
+        altfel daca n = 1 atunci
+            afiseaza a "->" c
+        altfel
+        begin
+            Hanoi(n-1, a, c, b)
+            afiseaza a "->" c
+            Hanoi(n-1, b, a, c)
+        end
+    end
+
+        
