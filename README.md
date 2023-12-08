@@ -35,7 +35,9 @@ Pasul 3: - mutarea a n-1 discuri de pe tija b pe tija c , utilizând ca tijă in
 ![image](https://img001.prntscr.com/file/img001/SgL5XRghQ_WXA0MlWXto_g.png)
 Aplicam algoritmul de mai sus pentru 3 discuri si trebuie sa ne iasa 2^3 - 1 = 8 mutari:
 
-H(3, a, b, c) = H(2, a, c, b,), ac, H(2, b, a, c) = H(1, a, b, c), ab, H(1, c, a, b), ac, H(1, b, c, a), bc, H(1, a, b, c) = ac, ab, cb, ac, ba, bc, ac (8 mutari)
+H(3, a, b, c) = H(2, a, c, b,), ac, H(2, b, a, c) = 
+H(1, a, b, c), ab, H(1, c, a, b), ac, H(1, b, c, a), bc, H(1, a, b, c) = 
+ac, ab, cb, ac, ba, bc, ac (8 mutari)
 
 ##### Algoritmul scris in limbaj pascal:
 
