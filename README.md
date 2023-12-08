@@ -3,6 +3,7 @@
 **În anul 1883, matematicianul francez Edouard Lucas a propus problema turnurilor din Hanoi, o problemă-joc inspirată din legenda unui templu hindus.**
 
 ![turnurilehanoi](https://12belize.com/wp-content/uploads/2020/09/Wooden-Tower-of-Hanoi-Lucas-Tower.jpg)
+
 ### Leganda:
 
 Atunci când lumea a fost creată, preoţilor dintr-un templu din Benares (India) le-au fost dăruite 3 ace de diamant şi 64 discuri de aur.
@@ -11,7 +12,7 @@ Atunci când lumea a fost creată, preoţilor dintr-un templu din Benares (India
 
 ![turnurilehanoi](https://vietnamdiscovery.com/wp-content/uploads/2019/10/Tran-quoc-pagoda-from-outside-@lozjeffries.jpg)
 
-####Stiai ca...?
+###Stiai ca...?
 
 Dacă preoţii ar lucra zi şi noapte, făcând o mutare în fiecare secundă, le-ar lua mai mult de 580 miliarde de ani pentru a termina mutarea turnului format din cele 64 discuri.
               Interesant este că unii oameni de știință au estimat că aproximativ peste atâția ani, Sistemul Solar ar dispărea...
@@ -36,7 +37,8 @@ Aplicam algoritmul de mai sus pentru 3 discuri si trebuie sa ne iasa 2^3 - 1 = 8
 
 H(3, a, b, c) = H(2, a, c, b,), ac, H(2, b, a, c) = H(1, a, b, c), ab, H(1, c, a, b), ac, H(1, b, c, a), bc, H(1, a, b, c) = ac, ab, cb, ac, ba, bc, ac (8 mutari)
 
-#####Algoritmul scris in limbaj pascal:
+###Algoritmul scris in limbaj pascal:
+
     functie Hanoi(int n, char a, char b, char c) void
     begin
         daca n <= 0 atunci
