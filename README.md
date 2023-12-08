@@ -26,7 +26,9 @@ Dacă preoţii ar lucra zi şi noapte, făcând o mutare în fiecare secundă, l
 Problema se rezolva recursiv, folosind metoda ***Divide et Impera***, iar algoritmul de rezolvare este urmatorul:
 
 Pasul 1: - mutarea a n-1 discuri de pe tija a pe tija b , utilizând ca tijă intermediară tija c ;
+
 Pasul 2: - mutarea discului rămas pe tija c ;
+
 Pasul 3: - mutarea a n-1 discuri de pe tija b pe tija c , utilizând ca tijă intermediară tija a .
 
 ![image](https://img001.prntscr.com/file/img001/SgL5XRghQ_WXA0MlWXto_g.png)
